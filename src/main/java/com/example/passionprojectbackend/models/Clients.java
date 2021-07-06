@@ -1,15 +1,14 @@
-package models;
+package com.example.passionprojectbackend.models;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @ToString
@@ -23,6 +22,5 @@ public class Clients {
     private String name;
     private String email;
     private String message;
-
 
 }
